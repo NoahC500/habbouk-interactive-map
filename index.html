@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/5b59437a-a6f1-4283-bccb-f9e3bdf00a82/Favicon.png?v=1721264770073" />
+    <title>HabboUK Interactive Map</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title" id="title">HabboUK Interactive Map</h1>
+        
+        <img src="https://cdn.glitch.global/5b59437a-a6f1-4283-bccb-f9e3bdf00a82/HQ.png?v=1721254807039" alt="Map of HQ" usemap="#hqMap" id="image">
+        
+        <map name="hqMap" style="cursor: pointer;">
+          <area shape="rect" coords="0,0,395,340" alt="Big Ben" id="bigBenBtn">
+          <area shape="rect" coords="586,0,1000,423" alt="COIL" id="coilBtn">
+          <area shape="rect" coords="623,435,862,670" alt="Employee Entrance" id="eeBtn">
+          <area shape="rect" coords="409,550,619,692" alt="Parliament Rotunda" id="legiBtn">
+          <area shape="poly" coords="183,813,255,778,230,765,229,758,385,681,543,758,542,807,311,924,184,864" alt="Judicial Corridor" id="judiBtn">
+          <area shape="poly" coords="7,658,154,582,278,558,369,605,378,650,303,681,305,698,154,771,7,695" alt="Downing St. Interior" id="tenDowningIntBtn">
+        </map>
+        
+        <map name="bigBenMap" style="cursor: pointer;">
+          <area shape="poly" coords="740,301,806,301,882,340,884,426,806,463,757,461,730,412,717,404,715,405,668,428,661,425,663,340" alt="Parliament Rotunda" id="bigBenToLegiBtn">
+          <area shape="poly" coords="31,843,235,743,352,800,353,815,419,847,430,841,448,848,450,865,185,1000,165,1000,30,933" alt="Buckingham Palace Exterior" id="buckingPalaceExtBtn">
+          <area shape="poly" coords="0,335,8,332,34,345,125,299,123,269,144,262,148,288,218,252,217,238,223,236,226,240,225,253,238,258,238,245,260,235,262,247,269,244,272,247,293,237,337,255,402,274,423,296,424,358,378,379,348,365,331,373,326,386,243,430,253,435,225,451,212,443,129,486,1,425,1,336" alt="Downing Street Exterior" id="downingExtBtn">
+          <area shape="poly" coords="583,841,776,747,834,778,859,765,928,799,945,792,954,795,955,804,1000,826,1000,943,899,1000,869,988,850,1000,752,1000,683,962,683,952,582,903" alt="HQ" id="hqBtn">
+        </map>
+        
+        <map name="downingExtMap" style="cursor: pointer;">
+          <area shape="poly" coords="690,708,691,697,701,694,702,681,707,677,706,614,721,608,721,622,737,616,738,638,750,633,750,592,766,585,767,621,790,611,794,616,795,631,803,629,811,605,830,566,859,534,951,579,946,558,946,548,958,510,963,473,1000,379,1000,820,949,845,789,765,793,760,793,714,793,701,787,686,776,692,775,664,762,659,758,724,756,722,746,734" alt="Big Ben Exterior" id="downingStToBigBenBtn">
+          <area shape="poly" coords="791,760,626,848,659,866,604,895,566,877,394,961,183,856,184,730,578,536,591,536,646,563,644,570,647,656,650,657,651" alt="Buckingham Palace Exterior" id="downingStToBuckingPalaceBtn">
+          <area shape="poly" coords="0,282,0,236,163,160,204,180,287,139,394,186,395,193,390,195,393,228,318,226,323,284,164,364" alt="10 Downing Street Entrance Hall" id="downingExtToEntranceHallBtn">
+        </map>
+        
+      </div>
+    </div>
+    <footer>
+      <button id="constHQBtn">
+        Back to HQ
+      </button>
+      <a href="https://habbouk.com/">
+        <button id="siteBtn">
+          Back to HabboUK Site
+        </button>
+      </a>
+    </footer>
+  </body>
+</html>
